@@ -1,0 +1,43 @@
+Unit Tests
+1.A function called "multiplication" that returns the product of the two input numbers.
+
+Expect multiplication (2, 3) to be a number
+Expect multiplication (0, 3) to be equal to 0
+Expect multiplication (4, 7) to be equal to 28
+Expect multiplication (3, 5) to ne equal to 15
+Expect multiplication ("2", 3) to be an error
+Expect multiplication (2, "3") to be an error
+Expect multiplication (4, None) to be an error
+
+2.A function called "concatOdds" takes two arrays of integers as arguments. It should return a single array that only contains the odd numbers, in ascending order, from both of the arrays.
+
+Expect concatOdds ([3, 2, 1], [9, 1, 1, 1, 4, 15, -1]) to be an array
+Expect concatOdds([], []) to be an empty array
+Expect concatOdds([1, 2, "3"], [4, 5, 6]) to be an error
+
+Functional Tests
+A shopping cart checkout feature that allows a user to check out as a guest (without an account), or as a logged-in user. They should be allowed to do either, but should be asked if they want to create an account or log in if they check out as a guest.
+Guest Checkout
+    Expect an option to continue as a guest
+    Expect a message asking the user if they would ike to create an account
+    Expect a message prompting a 10% discount when making a new account
+Logged-in user
+    Expect User's saved information to auto add
+    Expect option to change users' saved information
+    Expect a message prompting 10% discount for logging in
+
+Empty Carty
+    Expect error message to display
+    Expect error message to suggest items to add to cart
+    Expect "continue shopping" to display
+
+Checkout Process
+    Expect the user to confirm payment information
+    Expect the user to be prompted to review before order submission
+    Expect the user to be redirected to confirmation page after completion
+    Expect confirmation email to be sent after checkout process
+    Expect an order confirmation page after commpleting checkout process
+
+Errors
+Expect an error message when inputting invalid payment method
+Expect an error message when inputting invalid shipping address
